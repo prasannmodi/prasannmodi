@@ -1,0 +1,21 @@
+Task Description
+
+Attached is a CSV file containing anonymized data on how many tests are conducted per client daily along with other parameters that may affect this value. 
+
+company_id - id representing our client
+company_type - string value of what type of company it is
+date - the date when tests were conducted
+avg_pesq_score - average PESQ (audio quality metric ) score across all tests for that day
+quality_too_poor - the number of tests that were marked quality too poor
+number_busy - the number of tests that returned busy during the test
+temporarily_unable_to_test - the number of tests that we could not carry out due to an issue on our side
+outage_sec - the number of seconds the client's lines were down for that day
+number_test_types - the number of different test types that the client conducts with us
+numbers_tested - how many unique numbers they have in testing
+followup_tests - the amount of follow-up connection tests were conducted - this happens when a number returns busy
+min_commit - this is the number of minimum monthly tests a client can conduct before getting charged more
+has_min_commit - flag to state if the client has a minimum commitment
+volume_tests - the amount of total tests conducted that day for the client
+is_testing - flag stating  whether the client is still testing with us
+
+What we would like you to do is carry out some data analysis and build a model using python to predict how many tests will be conducted for a client on a future date.
